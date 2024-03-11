@@ -1,51 +1,101 @@
-nav button  {
-   font-size: 20px; /* Tamaño de fuente */
-   padding: 10px 80px; /* Relleno del botón */
+body {
+   font-family: Arial, sans-serif;
+   background-color: #829dc1;
+   margin: 0;
+   padding: 0;
 }
 
-nav{
-   display:grid;
+nav {
+   background-color: #337DFF;
+   padding: 3px;
+   display: flex;
+   justify-content: space-between;
    align-items: center;
-   background-color: #FF6A6A;
-   font-family: sans-serif;
-   position: fixed;
-   top: 0;
-   left: 0;
-   width: 100%;
-   z-index: 1000;
-   overflow: hidden; 
 }
 
-
-nav .barranav {
-   display: grid;
-   grid-template-columns: repeat(5, auto);
-   margin-right: 30px;
+ul {
+   list-style-type: none;
+   margin-right: 1px;
+   margin-left: 1px;
+   padding: 0;
+   display: flex;
 }
 
-nav .barranav div {
-   padding: 20px;
-   font-size: 18px; /* Ajustado el tamaño de la fuente de los botones de la barra de navegación */
+li {
+   margin-right: 150px;
 }
 
-nav .barranav div:hover {
-   cursor: pointer;
-   background: rgb(185, 244, 113);
+a:hover{
+   color: orange;
 }
 
-nav .barranav div a {
-   font-size: 18px;
+li:last-child {
+   margin-right: 0;
+}
+
+a {
+   color: white;
    text-decoration: none;
-   color: rgb(255, 0, 0);
-   text-shadow: 1px 0px 0px black,
-               0px 1px 0px black,
-               -1px 0px 0px black,
-               0px -1px 0px black;
+   font-weight: bold;
+   font-size: 23px;
+}
+
+audio {
+   margin-left: 20px;
+}
+
+.form-container {
+   display: flex;
+   justify-content: space-around;
+   align-items: flex-start;
+   margin-top: 50px;
+}
+.card {
+   max-width: 20rem;
+   border: 2px solid #337DFF;
+   border-radius: 10px;
+   margin-right: 20px;
+}
+.card:last-child {
+   margin-right: 0;
+}
+.card-body {
+   padding: 20px;
+   background-color: orange;
+}
+.form-control {
+   margin-bottom: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   padding: 10px;
+}
+.btn-primary {
+   background-color: #337DFF;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   color: white;
+   cursor: pointer;
+}
+.btn-primary:hover {
+   background-color: #0056b3;
+}
+
+.row {
+   display: flex;
+   justify-content: center;
+}
+
+.center-form {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   padding: 30px;
 }
 
 #podio{
    display: flex;
-   justify-content: space-between;
+   justify-content:center;
 }
 
 #podio div{
@@ -54,7 +104,7 @@ nav .barranav div a {
 }
 
 #pos1 {
-   margin-top: 10%;
+   margin-top: 5%;
    font-size: 15px;
    background-repeat: no-repeat;
    background-image: url("../IMAGES/posicion1.png");
@@ -63,7 +113,7 @@ nav .barranav div a {
 }
 
 #pos2 {
-   margin-top: 10%;
+   margin-top: 7%;
    font-size: 15px;
    background-repeat: no-repeat;
    background-image: url("../IMAGES/posicion2.png");
@@ -72,7 +122,7 @@ nav .barranav div a {
 }
 
 #pos3 {
-   margin-top: 10%;
+   margin-top: 7%;
    font-size: 15px;
    background-repeat: no-repeat;
    background-image: url("../IMAGES/posicion3.png");
@@ -109,17 +159,6 @@ nav .barranav div a {
    background-color: rgb(255, 141, 255);
 }
 
-body {
-   background-color: #BEE4B1;
-   margin: 0; /* Agregado para eliminar el margen predeterminado del body */
-}
-
-.QUIZ {
-   text-align: center;
-   margin-top: 80px; /* Ajustado el margen superior del contenido */
-   font-size: 135px; /* Ajustado el tamaño de la fuente del título QUIZ */
-}
-
 .QUIZ a {
    text-decoration: none;
    color: black;
@@ -135,4 +174,33 @@ body {
 
 audio{
    margin-top: 10%;
+}
+
+#textoInicio:hover{
+   filter: saturate(200%);
+}
+#textoInicio{
+   color: orange;
+   text-align: center;
+   margin-top: 80px; 
+   font-size: 135px; 
+}
+
+.QUIZ{
+   text-align: center;  
+   margin-top: 150px; 
+}
+
+#questions button{
+   color: whitesmoke;
+   background-color: lightsalmon;
+   text-decoration: none;
+}
+
+#questions button:hover{
+   filter: saturate(200%);
+}
+a img{
+   -webkit-transform: rotate(360deg);
+   transform: rotate(360deg);
 }

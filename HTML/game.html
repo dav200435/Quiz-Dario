@@ -10,14 +10,16 @@
 </head>
 <body>
     <nav>
-        <div class='barranav'>
-          <blockquote><div><button type="button"><a href="Login.html">INICIO SESION</a></button></div></blockquote>
-          <blockquote><div id="usuario" style="display: none;"><span id="nombreUsuario"></span> </div></blockquote>
-          <blockquote><div><button type="button"><a href="ranking.html">RANKING</a></button></div></blockquote>
-          <blockquote><div><button type="button"><a href="game.html">QUIZ</a></button></div></blockquote>
-          <audio id="miAudio" controls><source src="../KahootMusic.mp3" type="audio/mp3" loop></audio>
-       </div>
-      </nav>
+        <div class="logo"><a href="./index.html"><img src="../icono.jpg" height="120px"></a></div>
+        <ul>
+            <li><a href="./Login.html">INICIO SESIÓN</a></li>
+            <li><a href="./ranking.html">RANKING</a></li>
+            <li><a href="./game.html">QUIZ</a></li>
+        </ul>
+        <audio controls autoplay muted>
+            <source src="../KahootMusic.mp3" type="audio/mp3">
+        </audio>
+    </nav>
 
 <h1>QUIZ Game</h1>
 <div id="correct-answers"><p>Respuestas correctas: <span id="correct-count">0</span></p></div>

@@ -1,0 +1,13 @@
+Corregir barra de navegacion
+
+formularios
+
+botones quiz
+
+revisar la caja  del audio 
+
+poner animacion al texto inicial
+
+poner animacion inicio de sesion/registro
+
+podio

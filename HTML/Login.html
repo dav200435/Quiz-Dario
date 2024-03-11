@@ -6,46 +6,52 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>CRUD Firebase</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/pulse/bootstrap.min.css"integrity="sha384-L7+YG8QLqGvxQGffJ6utDKFwmGwtLcCjtwvonVZR/Ba2VzhpMwBz51GaXnUsuYbj" crossorigin="anonymous">
         <link rel="stylesheet" href="../CSS/style.css">  
         <link rel="shortcut icon" type="image/x-icon" href="../favicon-16x16.png">
     </head>
     <body>
         <nav>
-            <div class='barranav'>
-              <blockquote><div><button type="button"><a href="Login.html">INICIO SESION</a></button></div></blockquote>
-              <blockquote><div id="usuario" style="display: none;"><span id="nombreUsuario"></span> </div></blockquote>
-              <blockquote><div><button type="button"><a href="ranking.html">RANKING</a></button></div></blockquote>
-              <blockquote><div><button type="button"><a href="game.html">QUIZ</a></button></div></blockquote>
-              <audio id="miAudio" controls><source src="../KahootMusic.mp3" type="audio/mp3" loop></audio>
-           </div>
-          </nav>
+            <div class="logo"><a href="./index.html"><img src="../icono.jpg" height="120px"></a></div>
+            <ul>
+                <li><a href="./Login.html">INICIO SESIÓN</a></li>
+                <li><a href="./ranking.html">RANKING</a></li>
+                <li><a href="./game.html">QUIZ</a></li>
+            </ul>
+            <audio controls autoplay muted>
+                <source src="../KahootMusic.mp3" type="audio/mp3">
+            </audio>
+        </nav>
         <br>
         <br>
         <br>
         <br>
-        <div class="card text-white bg-info mb-6  offset-md-4 register" style="max-width: 20rem;">
-            <div class="card-body">
-                <form id="task-form">
-                    <input type="text" id="task-title" class="form-control" placeholder="nombre de usuario" autofocus>
-                    <input type="password" id="task-description" class="form-control" placeholder="contraseña">
-                    <br>
-                    <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
-                </form>
+        <div class="row justify-content-center">
+            <div class="card text-white bg-info mb-6">
+                <div class="card-body">
+                    <h2>registrarse</h2>
+                    <form id="task-form" class="center-form">
+                        <input type="text" id="task-title" class="form-control" placeholder="nombre de usuario" autofocus>
+                        <input type="password" id="task-description" class="form-control" placeholder="contraseña">
+                        <br>
+                        <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
+                    </form>
+                </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="card text-white bg-info mb-6  offset-md-4" style="max-width: 20rem;">
-            <div class="card-body">
-                <form id="task-form1">
-                    <input type="text" id="task-title1" class="form-control" placeholder="nombre de usuario"autofocus>
-                    <input type="password" id="task-description1" class="form-control" placeholder="contraseña">
-                    <br>
-                    <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
-                </form>
+    
+        <br><br><br><br>
+    
+        <div class="row justify-content-center">
+            <div class="card text-white bg-info mb-6">
+                <div class="card-body">
+                    <h2>Inicio de Sesion</h2>
+                    <form id="task-form1" class="center-form">
+                        <input type="text" id="task-title1" class="form-control" placeholder="nombre de usuario" autofocus>
+                        <input type="password" id="task-description1" class="form-control" placeholder="contraseña">
+                        <br>
+                        <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
+                    </form>
+                </div>
             </div>
         </div>
         <script src = "../JS/scriptUsuario.js" type="module" defer></script>
