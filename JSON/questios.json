@@ -1,0 +1,130 @@
+[
+{
+    "type":"multiple",
+    "difficulty":"easy",
+    "category":"Science",
+    "question":"¿Cuál es el metal más abundante en la corteza terrestre?",
+    "correct_answer":"Hierro",
+    "incorrect_answers":["Aluminio","Acero","Cobre"]
+},
+{
+    "type":"multiple",
+    "difficulty":"easy",
+    "category":"Science: Computers",
+    "question":"¿Cual es el lenguaje de programación más usado?",
+    "correct_answer":"JavaScript",
+    "incorrect_answers":["Python","C","Jakarta"]
+},
+{
+    "type":"multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "¿Cuál es el río más largo del mundo?",
+    "correct_answer": "Río Amazonas",
+    "incorrect_answers": ["Río Nilo", "Río Yangtsé", "Río Misisipi"]
+},
+{
+    "type":"multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "¿Cuál es el animal terrestre más grande del mundo?",
+    "correct_answer": "Elefante africano",
+    "incorrect_answers": ["Jirafa", "Hipopótamo", "Oso polar"]
+},
+{
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Science: Biology",
+    "question": "¿Qué tipo de célula es conocida como la 'unidad básica de la vida'?",
+    "correct_answer": "Célula",
+    "incorrect_answers": ["Átomo", "Molécula", "Tejido"]
+},
+{
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Music",
+    "question": "¿Quién es conocido como el 'Rey del Pop'?",
+    "correct_answer": "Michael Jackson",
+    "incorrect_answers": ["Elvis Presley", "Prince", "Madonna"]
+},
+{
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Science: Astronomy",
+    "question": "¿Cuál es el nombre de la estrella más cercana a la Tierra, después del Sol?",
+    "correct_answer": "Próxima Centauri",
+    "incorrect_answers": ["Alfa Centauri A", "Alfa Centauri B", "Barnard's Star"]
+},
+{
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Film",
+    "question": "¿Qué película ganó el Premio de la Academia a la Mejor Película en 1994?",
+    "correct_answer": "Forrest Gump",
+    "incorrect_answers": ["Pulp Fiction", "The Shawshank Redemption", "Braveheart"]
+},
+{
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "General Knowledge",
+    "question": "¿Cuál es el metal más precioso?",
+    "correct_answer": "Oro",
+    "incorrect_answers": ["Plata", "Cobre", "Hierro"]
+},
+{
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Science: Physics",
+    "question": "¿Cuál es la velocidad de la luz en el vacío?",
+    "correct_answer": "299,792,458 metros por segundo",
+    "incorrect_answers": ["300,000,000 metros por segundo", "250,000,000 metros por segundo", "200,000,000 metros por segundo"]
+},
+{
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Video Games",
+    "question": "¿Quién es el principal enemigo en el videojuego 'The Legend of Zelda'?",
+    "correct_answer": "Ganon",
+    "incorrect_answers": ["Bowser", "Ganondorf", "Ghirahim"]
+},
+{
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Geography",
+    "question": "¿Cuál es la capital de Francia?",
+    "correct_answer": "París",
+    "incorrect_answers": ["Madrid", "Roma", "Londres"]
+},
+{
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Science: Computers",
+    "question": "¿Cuál es el propósito principal del protocolo HTTP?",
+    "correct_answer": "Transferir recursos de un servidor web a un cliente",
+    "incorrect_answers": ["Enviar correos electrónicos", "Transferir archivos entre computadoras", "Controlar el acceso a una red privada"]
+},
+{
+    "type": "multiple",
+    "difficulty": "easy",
+    "category": "Entertainment: Books",
+    "question": "¿Quién escribió la saga de libros 'Harry Potter'?",
+    "correct_answer": "J.K. Rowling",
+    "incorrect_answers": ["J.R.R. Tolkien", "George R.R. Martin", "Stephenie Meyer"]
+},
+{
+    "type": "multiple",
+    "difficulty": "hard",
+    "category": "Science: Mathematics",
+    "question": "¿Cuál es la fórmula para calcular el área de un círculo?",
+    "correct_answer": "π * r^2",
+    "incorrect_answers": ["2 * π * r", "π * d", "2 * π * r^2"]
+},
+{
+    "type": "multiple",
+    "difficulty": "medium",
+    "category": "Entertainment: Music",
+    "question": "¿Cuál es el nombre completo de la cantante conocida como 'Adele'?",
+    "correct_answer": "Adele Laurie Blue Adkins",
+    "incorrect_answers": ["Adele Marie Green", "Adele Elizabeth Smith", "Adele Patricia Brown"]
+}
+]

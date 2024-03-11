@@ -1,0 +1,138 @@
+nav button  {
+   font-size: 20px; /* Tamaño de fuente */
+   padding: 10px 80px; /* Relleno del botón */
+}
+
+nav{
+   display:grid;
+   align-items: center;
+   background-color: #FF6A6A;
+   font-family: sans-serif;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   z-index: 1000;
+   overflow: hidden; 
+}
+
+
+nav .barranav {
+   display: grid;
+   grid-template-columns: repeat(5, auto);
+   margin-right: 30px;
+}
+
+nav .barranav div {
+   padding: 20px;
+   font-size: 18px; /* Ajustado el tamaño de la fuente de los botones de la barra de navegación */
+}
+
+nav .barranav div:hover {
+   cursor: pointer;
+   background: rgb(185, 244, 113);
+}
+
+nav .barranav div a {
+   font-size: 18px;
+   text-decoration: none;
+   color: rgb(255, 0, 0);
+   text-shadow: 1px 0px 0px black,
+               0px 1px 0px black,
+               -1px 0px 0px black,
+               0px -1px 0px black;
+}
+
+#podio{
+   display: flex;
+   justify-content: space-between;
+}
+
+#podio div{
+   text-align: center;
+   padding: 50px;
+}
+
+#pos1 {
+   margin-top: 10%;
+   font-size: 15px;
+   background-repeat: no-repeat;
+   background-image: url("../IMAGES/posicion1.png");
+   background-size: 180px 180px;
+   width: 85px;
+}
+
+#pos2 {
+   margin-top: 10%;
+   font-size: 15px;
+   background-repeat: no-repeat;
+   background-image: url("../IMAGES/posicion2.png");
+   background-size: 180px 180px;
+   width: 85px;
+}
+
+#pos3 {
+   margin-top: 10%;
+   font-size: 15px;
+   background-repeat: no-repeat;
+   background-image: url("../IMAGES/posicion3.png");
+   background-size: 180px 180px;
+   width: 85px;
+}
+
+#finalistas {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 50px;
+}
+
+#finalistas div {
+   width: 50%;
+   border: 3px solid black;
+   display: flex;
+   justify-content: space-between;
+}
+
+#finalistas div p {
+   margin-left: 15px;
+   margin-right: 15px;
+}
+
+#pos4 {
+   background-repeat: no-repeat;
+   background-color: rgb(255, 141, 255);
+}
+
+#pos5 {
+   background-repeat: no-repeat;
+   background-color: rgb(255, 141, 255);
+}
+
+body {
+   background-color: #BEE4B1;
+   margin: 0; /* Agregado para eliminar el margen predeterminado del body */
+}
+
+.QUIZ {
+   text-align: center;
+   margin-top: 80px; /* Ajustado el margen superior del contenido */
+   font-size: 135px; /* Ajustado el tamaño de la fuente del título QUIZ */
+}
+
+.QUIZ a {
+   text-decoration: none;
+   color: black;
+}
+
+#correct-answers{
+   margin-top: 7%;
+}
+
+.register{
+   margin-top: 7%;
+}
+
+audio{
+   margin-top: 10%;
+}
