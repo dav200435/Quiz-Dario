@@ -9,16 +9,16 @@ nav {
    background-color: #337DFF;
    padding: 3px;
    display: flex;
-   justify-content: space-between;
    align-items: center;
+   justify-content: space-between;
+   justify-content: space-around;
 }
 
 ul {
    list-style-type: none;
-   margin-right: 1px;
-   margin-left: 1px;
    padding: 0;
    display: flex;
+   margin-right: 15%;
 }
 
 li {
@@ -104,7 +104,7 @@ audio {
 }
 
 #pos1 {
-   margin-top: 5%;
+   margin-top: 2%;
    font-size: 15px;
    background-repeat: no-repeat;
    background-image: url("../IMAGES/posicion1.png");
@@ -113,7 +113,7 @@ audio {
 }
 
 #pos2 {
-   margin-top: 7%;
+   margin-top: 5%;
    font-size: 15px;
    background-repeat: no-repeat;
    background-image: url("../IMAGES/posicion2.png");
@@ -141,7 +141,7 @@ audio {
    width: 50%;
    border: 3px solid black;
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 
 #finalistas div p {
@@ -204,4 +204,42 @@ audio{
 a img{
    -webkit-transform: rotate(360deg);
    transform: rotate(360deg);
+}
+
+#questions {
+   margin: 0 auto;
+   max-width: 600px;
+   text-align: center;
+}
+
+#prev-btn, #next-btn {
+   background-color: #337DFF;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 10px;
+}
+
+#prev-btn:hover, #next-btn:hover {
+   background-color: #0056b3;
+}
+
+#restart-btn {
+   background-color: #337DFF;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 10px;
+}
+
+#restart-btn:hover {
+   background-color: #0056b3;
+}
+
+#button-container {
+   text-align: center; /* Centra los elementos hijos horizontalmente */
 }

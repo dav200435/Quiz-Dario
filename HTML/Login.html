@@ -17,44 +17,49 @@
                 <li><a href="./ranking.html">RANKING</a></li>
                 <li><a href="./game.html">QUIZ</a></li>
             </ul>
-            <audio controls autoplay muted>
-                <source src="../KahootMusic.mp3" type="audio/mp3">
-            </audio>
         </nav>
         <br>
         <br>
         <br>
         <br>
-        <div class="row justify-content-center">
-            <div class="card text-white bg-info mb-6">
-                <div class="card-body">
-                    <h2>registrarse</h2>
-                    <form id="task-form" class="center-form">
-                        <input type="text" id="task-title" class="form-control" placeholder="nombre de usuario" autofocus>
-                        <input type="password" id="task-description" class="form-control" placeholder="contraseña">
-                        <br>
-                        <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
-                    </form>
+        <div class="container">
+            <div class="row justify-content-center">
+                <button id="toggle-button" onclick="toggleForms()" class="btn btn-lg btn-primary">Mostrar Iniciar Sesión</button>
+            </div>
+            <br><br>
+            <div class="row justify-content-center">
+                <div id="register-div">
+                    <div class="card text-white bg-info mb-6">
+                        <div class="card-body">
+                            <h2>Registrarse</h2>
+                            <form id="register-form" class="center-form">
+                                <input type="text" id="register-username" class="form-control" placeholder="Nombre de usuario" autofocus>
+                                <input type="password" id="register-password" class="form-control" placeholder="Contraseña">
+                                <br>
+                                <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div id="login-div" style="display: none;">
+                    <div class="card text-white bg-info mb-6">
+                        <div class="card-body">
+                            <h2>Iniciar Sesión</h2>
+                            <form id="login-form" class="center-form">
+                                <input type="text" id="login-username" class="form-control" placeholder="Nombre de usuario" autofocus>
+                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña">
+                                <br>
+                                <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    
-        <br><br><br><br>
-    
-        <div class="row justify-content-center">
-            <div class="card text-white bg-info mb-6">
-                <div class="card-body">
-                    <h2>Inicio de Sesion</h2>
-                    <form id="task-form1" class="center-form">
-                        <input type="text" id="task-title1" class="form-control" placeholder="nombre de usuario" autofocus>
-                        <input type="password" id="task-description1" class="form-control" placeholder="contraseña">
-                        <br>
-                        <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
-                    </form>
-                </div>
-            </div>
-        </div>
+
+        
         <script src = "../JS/scriptUsuario.js" type="module" defer></script>
+        <script src="../js/loginstyles.js"></script>
     </body>
 </html>
 

@@ -16,16 +16,18 @@
             <li><a href="./ranking.html">RANKING</a></li>
             <li><a href="./game.html">QUIZ</a></li>
         </ul>
-        <audio controls autoplay muted>
-            <source src="../KahootMusic.mp3" type="audio/mp3">
-        </audio>
     </nav>
-
-<h1>QUIZ Game</h1>
-<div id="correct-answers"><p>Respuestas correctas: <span id="correct-count">0</span></p></div>
+    <audio autoplay>
+        <source src="../KahootMusic.mp3" type="audio/mp3">
+    </audio>
+    <div id="correct-answers"><p>Respuestas correctas: <span id="correct-count">0</span></p></div>
     <div id="questions"></div>
     <hr>
-    <input type="button" value="Volver a Jugar"  id="restart-btn">
+    <div id="button-container">
+        <button id="prev-btn">Anterior</button>
+        <button id="next-btn">Siguiente</button>
+        <input type="button" value="Volver a Jugar"  id="restart-btn">
+    </div>
     <script src="../JS/getQuestions.js" type="module" defer></script>
 </body>
 </html>

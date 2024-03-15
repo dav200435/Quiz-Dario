@@ -80,3 +80,4 @@ export async function ranking(usernameId, idranking, points=0) {
   const userDocRef = doc(db, "Users", usernameId);
   await setDoc(doc(db, "Ranking", idranking), {usuario: userDocRef, aciertos: points})
 }
+
