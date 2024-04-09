@@ -3,6 +3,7 @@ body {
    background-color: #829dc1;
    margin: 0;
    padding: 0;
+   color:white;
 }
 
 nav {
@@ -46,9 +47,9 @@ audio {
 
 .form-container {
    display: flex;
-   justify-content: space-around;
-   align-items: flex-start;
-   margin-top: 50px;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; /* Añadido para centrar verticalmente */
 }
 .card {
    max-width: 20rem;
@@ -91,6 +92,13 @@ audio {
    flex-direction: column;
    align-items: center;
    padding: 30px;
+}
+
+#form-container {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column; /* Añadido para centrar verticalmente */
 }
 
 #podio{
@@ -181,20 +189,22 @@ audio{
 }
 #textoInicio{
    color: orange;
-   text-align: center;
-   margin-top: 80px; 
+   text-align: center; 
    font-size: 135px; 
 }
 
 .QUIZ{
-   text-align: center;  
-   margin-top: 150px; 
+   text-align: center;   
 }
 
 #questions button{
-   color: whitesmoke;
-   background-color: lightsalmon;
-   text-decoration: none;
+   background-color: #337DFF;
+   color: white;
+   padding: 10px 20px;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   margin: 10px;
 }
 
 #questions button:hover{
@@ -210,7 +220,24 @@ a img{
    margin: 0 auto;
    max-width: 600px;
    text-align: center;
+   display: flex;
+   flex-wrap: wrap;
 }
+
+#questions div {
+   display: flex;
+   flex-wrap: wrap;
+ }
+
+ 
+#questions div p {
+   width: 100%;
+ }
+
+ #questions div button {
+   width: 46%;
+   float: left;
+ }
 
 #prev-btn, #next-btn {
    background-color: #337DFF;
@@ -242,4 +269,9 @@ a img{
 
 #button-container {
    text-align: center; /* Centra los elementos hijos horizontalmente */
+}
+
+#correct-answers{
+   text-align: center;
+   font-size: large;
 }

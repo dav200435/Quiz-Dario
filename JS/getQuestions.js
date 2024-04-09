@@ -34,11 +34,9 @@ function sendInfo() {
 }
 
 function displayQuestion(question) {
-    // Restaurar el estado de la pregunta desde el historial si está disponible
     if (questionHistory[currentQuestionIndex]) {
         question = questionHistory[currentQuestionIndex].question;
     } else {
-        // Guardar la pregunta actual en el historial
         questionHistory[currentQuestionIndex] = { question: question };
     }
 
@@ -58,24 +56,25 @@ function displayQuestion(question) {
         button.textContent = option;
         button.addEventListener('click', () => {
             if (!question.answered) {
-                if (option === correctAnswer) {
-                    button.style.backgroundColor = "green";
-                    correctAnswersCount++;
-                    document.getElementById('correct-count').textContent = correctAnswersCount;
-                } else {
-                    button.style.backgroundColor = "red";
-                }
-                question.answered = true; // Marcar la pregunta como respondida
-                
-                // Bloquear los botones después de responder
-                const buttons = questionElement.querySelectorAll('button');
-                buttons.forEach(btn => {
-                    btn.disabled = true;
-                    if (btn.textContent !== option) {
-                        btn.style.backgroundColor = "black";
-                        btn.style.color = "white";
+                const allButtons = questionElement.querySelectorAll('button');
+                allButtons.forEach(btn => {
+                    if (btn.textContent !== correctAnswer) {
+                        btn.style.backgroundColor = "red";
+                    } else {
+                        btn.style.backgroundColor = "green";
                     }
                 });
+
+                if (option === correctAnswer) {
+                    correctAnswersCount++;
+                    document.getElementById('correct-count').textContent = correctAnswersCount;
+                }
+                question.answered = true;
+                
+                const buttons = questionElement.querySelectorAll('button');
+                buttons.forEach(btn => {
+                    btn.disabled = true;  
+                })
             }
         });
         questionElement.appendChild(button);

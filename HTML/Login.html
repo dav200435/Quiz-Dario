@@ -18,49 +18,32 @@
                 <li><a href="./game.html">QUIZ</a></li>
             </ul>
         </nav>
-        <br>
-        <br>
-        <br>
-        <br>
-        <div class="container">
-            <div class="row justify-content-center">
-                <button id="toggle-button" onclick="toggleForms()" class="btn btn-lg btn-primary">Mostrar Iniciar Sesión</button>
-            </div>
-            <br><br>
-            <div class="row justify-content-center">
-                <div id="register-div">
-                    <div class="card text-white bg-info mb-6">
-                        <div class="card-body">
-                            <h2>Registrarse</h2>
-                            <form id="register-form" class="center-form">
-                                <input type="text" id="register-username" class="form-control" placeholder="Nombre de usuario" autofocus>
-                                <input type="password" id="register-password" class="form-control" placeholder="Contraseña">
-                                <br>
-                                <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
-                            </form>
-                        </div>
-                    </div>
+        <div id="form-container">
+            <div class="card text-white bg-info mb-6  offset-md-4 register" style="max-width: 20rem;">
+                <div class="card-body">
+                    <h3>Registrarse</h3>
+                    <form id="task-form">
+                        <input type="text" id="task-title" class="form-control" placeholder="nombre de usuario" autofocus>
+                        <input type="password" id="task-description" class="form-control" placeholder="contraseña">
+                        <br>
+                        <input type="submit" value="registrarse" class="btn btn-lg btn-primary" id="task-button">
+                    </form>
                 </div>
-                <div id="login-div" style="display: none;">
-                    <div class="card text-white bg-info mb-6">
-                        <div class="card-body">
-                            <h2>Iniciar Sesión</h2>
-                            <form id="login-form" class="center-form">
-                                <input type="text" id="login-username" class="form-control" placeholder="Nombre de usuario" autofocus>
-                                <input type="password" id="login-password" class="form-control" placeholder="Contraseña">
-                                <br>
-                                <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
-                            </form>
-                        </div>
-                    </div>
+            </div>
+            <br>
+            <br>
+            <div class="card text-white bg-info mb-6  offset-md-4" style="max-width: 20rem;">
+                <div class="card-body">
+                    <form id="task-form1">
+                        <h3>Iniciar Sesión</h3>
+                        <input type="text" id="task-title1" class="form-control" placeholder="nombre de usuario"autofocus>
+                        <input type="password" id="task-description1" class="form-control" placeholder="contraseña">
+                        <br>
+                        <input type="submit" value="iniciar sesion" class="btn btn-lg btn-primary" id="task-button">
+                    </form>
                 </div>
             </div>
         </div>
-
-        
         <script src = "../JS/scriptUsuario.js" type="module" defer></script>
-        <script src="../js/loginstyles.js"></script>
     </body>
 </html>
-
-<!--tienes que vincular esto bien para que funcione y que en localStorage se suba el id y que pongas la var loggedIn a True -->

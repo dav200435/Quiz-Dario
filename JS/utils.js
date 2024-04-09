@@ -17,6 +17,7 @@ const firebaseConfig = {
 };
 
 
+
 // Guardamos en constantes las tablas Users, Ranking y Quiz de nuestra de datos firebase.
 export const app = initializeApp(firebaseConfig);
 export const db = getFirestore(app);
@@ -80,4 +81,3 @@ export async function ranking(usernameId, idranking, points=0) {
   const userDocRef = doc(db, "Users", usernameId);
   await setDoc(doc(db, "Ranking", idranking), {usuario: userDocRef, aciertos: points})
 }
-
